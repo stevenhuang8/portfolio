@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Steven Huang — Portfolio
+
+Personal portfolio site showcasing my work as an AI engineer and builder. Features projects at the intersection of AI, sports, and food — built with a neon-dark aesthetic and smooth animations.
+
+## Sections
+
+- **Hero** — Intro with typewriter effect cycling through roles (AI Engineer, Builder, Soccer Fan, Gamer, Foodie)
+- **Projects** — Featured projects with 3D flip card animations
+- **About** — Bio, skill tree, stats, and interests
+- **Resume** — Experience and education timeline with PDF download
+- **Contact** — Links to reach me
+
+## Featured Projects
+
+| Project | Description | Stack |
+|---------|-------------|-------|
+| [FF15](https://github.com/stevenhuang8/FF15) | Food & Fitness AI Coach — multi-agent platform with 9 subagents, GPT-4 Vision meal analysis, RAG-powered recipes | Next.js 15, AI SDK 5, GPT-4o, Supabase, RAG |
+| [DegenGPT](https://github.com/stevenhuang8/DegenGPT) | AI Sports Betting Advisor — 3-agent platform with real-time odds analysis and reasoning tokens | Next.js 15, AI SDK 5, GPT-5, Vectorize, MCP, RAG |
+| [Flaskr](https://github.com/stevenhuang8/CRUD_Flask) | Full-stack CRUD blog app with authentication and SQLite | Python, Flask, SQLite, Jinja2 |
+
+## Tech Stack
+
+- **Framework**: Next.js 15 / React 19
+- **Styling**: Tailwind CSS 4
+- **Animations**: Framer Motion
+- **Language**: TypeScript
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contact
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- GitHub: [@stevenhuang8](https://github.com/stevenhuang8)
+- Email: steven.t.huang8@gmail.com
+- LinkedIn: [Steven Huang](https://linkedin.com/in/stevenhuang8)

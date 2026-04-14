@@ -60,7 +60,7 @@ export default function About() {
               <p className="text-[var(--text-muted)] text-sm leading-relaxed mb-4">
                 I build AI-powered products that solve real problems — from coaching you through workouts
                 to analyzing your next sports bet. When I&apos;m not coding, I&apos;m on the pitch, in a game,
-                or hunting for the best bowl of ramen.
+                or hunting for the next best meal.
               </p>
               <p className="text-[var(--text-muted)] text-sm leading-relaxed">
                 I specialize in multi-agent architectures, RAG systems, and full-stack Next.js apps

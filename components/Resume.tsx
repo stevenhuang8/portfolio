@@ -5,9 +5,42 @@ import { Download } from "lucide-react";
 
 const experience = [
   {
+    role: "Engineer Intern",
+    company: "Wistron Neweb Corporation",
+    period: "Aug 2022 — Dec 2022",
+    bullets: [
+      "Installed and configured a Linux-hosted MediaWiki system with SQL database support, supporting user authentication, data persistence, and system reliability",
+      "Troubleshot configuration and integration issues across OS, database, and application layers to ensure stable system operation",
+      "Collaborated with engineers to understand system requirements and improve reliability of internal tools",
+    ],
+    color: "var(--neon-yellow)",
+  },
+  {
+    role: "Full-Stack Developer",
+    company: "Projects & Learning",
+    period: "2024 — 2025",
+    bullets: [
+      "Built Flaskr CRUD blog app with Flask, SQLite, Jinja2 templating, and auth",
+      "Developed stevebnb2 housing application with full CRUD and user flows",
+      "Gained proficiency in Python, REST APIs, and relational databases",
+    ],
+    color: "var(--neon-orange)",
+  },
+  {
+    role: "Agent Engineering Bootcamp",
+    company: "Agent Lab / Maven",
+    period: "Sep 2025 — Oct 2025",
+    bullets: [
+      "Completed intensive engineering program focused on system design, software implementation, testing, and iterative improvement",
+      "Built and deployed full-stack AI capstone using Next.js, Supabase, and GPT-5 with real-time context reasoning",
+      "Implemented function-calling patterns and scalable agent lifecycle designs aligned with production AI system best practices",
+    ],
+    color: "var(--neon-pink)",
+  },
+  {
     role: "AI Engineer",
     company: "Independent",
-    period: "2024 — Present",
+    period: "2025 — Present",
     bullets: [
       "Built FF15: multi-agent AI food & fitness platform with 9 subagents and 27 tools",
       "Built DegenGPT: sports betting AI with RAG, web search, and MCP integrations",
@@ -15,24 +48,15 @@ const experience = [
     ],
     color: "var(--neon-green)",
   },
-  {
-    role: "Full-Stack Developer",
-    company: "Projects & Learning",
-    period: "2023 — 2024",
-    bullets: [
-      "Built Flaskr CRUD blog app with Flask, SQLite, Jinja2 templating, and auth",
-      "Developed stebnb2 housing application with full CRUD and user flows",
-      "Gained proficiency in Python, REST APIs, and relational databases",
-    ],
-    color: "var(--neon-orange)",
-  },
 ];
 
 const education = [
   {
-    degree: "San Jose State",
-    school: "University",
-    period: "2019 — 2024",
+    degree: "San Jose State University",
+    school: "B.S. Management Information Systems",
+    period: "Aug 2019 — May 2024",
+    gpa: "3.6 / 4.0",
+    coursework: "Data Structures & Algorithms, Database Management, Data Analytics",
     color: "var(--neon-blue)",
   },
 ];
@@ -127,11 +151,16 @@ export default function Resume() {
                     className="absolute -left-10 top-1 w-3 h-3 rounded-full border-2 border-[var(--bg-primary)]"
                     style={{ background: edu.color }}
                   />
-                  <div className="flex flex-wrap items-baseline gap-3">
+                  <div className="flex flex-wrap items-baseline gap-3 mb-1">
                     <h3 className="font-bold text-[var(--text-primary)]">{edu.degree}</h3>
                     <span className="text-sm" style={{ color: edu.color }}>{edu.school}</span>
                     <span className="text-xs text-[var(--text-muted)] ml-auto">{edu.period}</span>
                   </div>
+                  <p className="text-xs text-[var(--text-muted)]">
+                    GPA: <span className="text-[var(--text-primary)]">{edu.gpa}</span>
+                    <span className="mx-2">·</span>
+                    {edu.coursework}
+                  </p>
                 </motion.div>
               ))}
             </div>

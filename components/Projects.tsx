@@ -15,6 +15,7 @@ const projects = [
     glowClass: "glow-orange",
     gradientClass: "gradient-green-orange",
     github: "https://github.com/stevenhuang8/FF15",
+    live: "https://ff-15.vercel.app/login?ref=recruiter",
   },
   {
     title: "DegenGPT",
@@ -27,6 +28,7 @@ const projects = [
     glowClass: "glow-blue",
     gradientClass: "gradient-blue-pink",
     github: "https://github.com/stevenhuang8/DegenGPT",
+    live: "https://degen-gpt.vercel.app/",
   },
   {
     title: "Flaskr",
@@ -39,6 +41,7 @@ const projects = [
     glowClass: "glow-yellow",
     gradientClass: "gradient-yellow-green",
     github: "https://github.com/stevenhuang8/CRUD_Flask",
+    live: "https://crud-flask-sljn.onrender.com/",
   },
 ];
 

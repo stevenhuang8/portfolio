@@ -48,7 +48,6 @@ export default function Contact() {
           </h2>
           <p className="text-[var(--text-muted)] max-w-md mx-auto mb-12 text-sm leading-relaxed">
             Open to new projects, collaborations, or just talking AI, soccer, or food.
-            My DMs are always open — no boss battles required.
           </p>
         </motion.div>
 

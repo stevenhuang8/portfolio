@@ -81,7 +81,7 @@ export default function Resume() {
             </h2>
           </div>
           <a
-            href="/resume.pdf"
+            href="/Steven_Huang_Resume.pdf"
             download
             className="flex items-center gap-2 px-5 py-3 rounded-full border border-[var(--neon-green)]/40 text-[var(--neon-green)] text-sm font-bold tracking-wider hover:bg-[var(--neon-green)]/10 transition-colors"
           >

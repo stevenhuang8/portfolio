@@ -90,8 +90,43 @@ export default function Resume() {
           </a>
         </motion.div>
 
-        {/* Experience */}
+        {/* Education */}
         <div className="mb-12">
+          <p className="text-xs text-[var(--text-muted)] tracking-widest mb-6">EDUCATION</p>
+          <div className="relative">
+            <div className="absolute left-0 top-0 bottom-0 w-px bg-[var(--border-color)]" />
+            <div className="pl-8 space-y-6">
+              {education.map((edu, i) => (
+                <motion.div
+                  key={edu.degree}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.15 }}
+                  className="relative"
+                >
+                  <div
+                    className="absolute -left-10 top-1 w-3 h-3 rounded-full border-2 border-[var(--bg-primary)]"
+                    style={{ background: edu.color }}
+                  />
+                  <div className="flex flex-wrap items-baseline gap-3 mb-1">
+                    <h3 className="font-bold text-[var(--text-primary)]">{edu.degree}</h3>
+                    <span className="text-sm" style={{ color: edu.color }}>{edu.school}</span>
+                    <span className="text-xs text-[var(--text-muted)] ml-auto">{edu.period}</span>
+                  </div>
+                  <p className="text-xs text-[var(--text-muted)]">
+                    GPA: <span className="text-[var(--text-primary)]">{edu.gpa}</span>
+                    <span className="mx-2">·</span>
+                    {edu.coursework}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Experience */}
+        <div>
           <p className="text-xs text-[var(--text-muted)] tracking-widest mb-6">EXPERIENCE</p>
           <div className="relative">
             {/* Timeline line */}
@@ -126,41 +161,6 @@ export default function Resume() {
                       </li>
                     ))}
                   </ul>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Education */}
-        <div>
-          <p className="text-xs text-[var(--text-muted)] tracking-widest mb-6">EDUCATION</p>
-          <div className="relative">
-            <div className="absolute left-0 top-0 bottom-0 w-px bg-[var(--border-color)]" />
-            <div className="pl-8 space-y-6">
-              {education.map((edu, i) => (
-                <motion.div
-                  key={edu.degree}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.15 }}
-                  className="relative"
-                >
-                  <div
-                    className="absolute -left-10 top-1 w-3 h-3 rounded-full border-2 border-[var(--bg-primary)]"
-                    style={{ background: edu.color }}
-                  />
-                  <div className="flex flex-wrap items-baseline gap-3 mb-1">
-                    <h3 className="font-bold text-[var(--text-primary)]">{edu.degree}</h3>
-                    <span className="text-sm" style={{ color: edu.color }}>{edu.school}</span>
-                    <span className="text-xs text-[var(--text-muted)] ml-auto">{edu.period}</span>
-                  </div>
-                  <p className="text-xs text-[var(--text-muted)]">
-                    GPA: <span className="text-[var(--text-primary)]">{edu.gpa}</span>
-                    <span className="mx-2">·</span>
-                    {edu.coursework}
-                  </p>
                 </motion.div>
               ))}
             </div>

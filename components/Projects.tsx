@@ -16,6 +16,7 @@ const projects = [
     gradientClass: "gradient-green-orange",
     github: "https://github.com/stevenhuang8/FF15",
     live: "https://ff-15.vercel.app/login?ref=recruiter",
+    video: "/FF15.mp4",
   },
   {
     title: "DegenGPT",

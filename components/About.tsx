@@ -10,12 +10,36 @@ const stats = [
 ];
 
 const skills = [
-  { name: "Next.js / React", level: 88, color: "var(--neon-green)" },
-  { name: "AI SDK / LLMs", level: 90, color: "var(--neon-orange)" },
-  { name: "TypeScript", level: 82, color: "var(--neon-blue)" },
-  { name: "Python / Flask", level: 75, color: "var(--neon-yellow)" },
-  { name: "Supabase / SQL", level: 78, color: "var(--neon-pink)" },
-  { name: "RAG / Vectorize", level: 80, color: "var(--neon-green)" },
+  {
+    category: "Languages",
+    color: "var(--neon-green)",
+    items: ["JavaScript", "TypeScript", "Python", "Java", "SQL", "HTML", "CSS"],
+  },
+  {
+    category: "Frontend",
+    color: "var(--neon-blue)",
+    items: ["React", "Next.js", "Tailwind", "Supabase Auth", "Client/Server Components"],
+  },
+  {
+    category: "Backend",
+    color: "var(--neon-orange)",
+    items: ["Node.js", "Supabase (Postgres)", "REST APIs", "Django", "SQL"],
+  },
+  {
+    category: "AI & Data",
+    color: "var(--neon-pink)",
+    items: ["Vectorize", "LangChain", "RAG", "GPT-4 Vision", "GPT-5", "Multi-Agent Systems"],
+  },
+  {
+    category: "Tools",
+    color: "var(--neon-yellow)",
+    items: ["Git", "Linux", "Firecrawl MCP", "Docker", "VS Code"],
+  },
+  {
+    category: "Concepts",
+    color: "var(--neon-green)",
+    items: ["Full-Stack Development", "API Design", "Data Modeling", "Observability", "Testing", "Agile", "Scrum"],
+  },
 ];
 
 const interests = ["⚽ Soccer", "🎮 Video Games", "🍔 Food", "🤖 AI / LLMs", "🏀 Basketball", "⚾ Baseball"];
@@ -68,6 +92,26 @@ export default function About() {
               </p>
             </motion.div>
 
+            {/* Interests */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="p-6 rounded-2xl border border-[var(--border-color)] bg-[var(--bg-card)] mb-6"
+            >
+              <p className="text-xs text-[var(--neon-orange)] tracking-widest mb-4">// INTERESTS</p>
+              <div className="flex flex-wrap gap-2">
+                {interests.map((interest) => (
+                  <span
+                    key={interest}
+                    className="px-3 py-1.5 rounded-full border border-[var(--border-color)] text-sm text-[var(--text-muted)] hover:border-[var(--neon-green)]/50 hover:text-[var(--neon-green)] transition-colors cursor-default"
+                  >
+                    {interest}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+
             {/* Stat cards */}
             <div className="grid grid-cols-2 gap-3">
               {stats.map((stat, i) => (
@@ -87,54 +131,34 @@ export default function About() {
             </div>
           </div>
 
-          {/* Right — Skills + Interests */}
+          {/* Right — Skills */}
           <div>
             {/* Skills — RPG stat sheet */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="p-6 rounded-2xl border border-[var(--border-color)] bg-[var(--bg-card)] mb-6"
+              className="p-6 rounded-2xl border border-[var(--border-color)] bg-[var(--bg-card)] h-full"
             >
-              <p className="text-xs text-[var(--neon-green)] tracking-widest mb-4">// SKILL TREE</p>
-              <div className="space-y-4">
-                {skills.map((skill, i) => (
-                  <div key={skill.name}>
-                    <div className="flex justify-between text-xs mb-1">
-                      <span className="text-[var(--text-muted)]">{skill.name}</span>
-                      <span style={{ color: skill.color }}>{skill.level}</span>
-                    </div>
-                    <div className="xp-bar">
-                      <motion.div
-                        className="xp-fill"
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
-                        viewport={{ once: true }}
-                        transition={{ delay: i * 0.1, duration: 0.8, ease: "easeOut" }}
-                        style={{ background: skill.color }}
-                      />
+              <p className="text-xs text-[var(--neon-green)] tracking-widest mb-6">// SKILL TREE</p>
+              <div className="space-y-5">
+                {skills.map((group) => (
+                  <div key={group.category}>
+                    <span className="text-[11px] tracking-widest font-semibold" style={{ color: group.color }}>
+                      {group.category.toUpperCase()}
+                    </span>
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {group.items.map((item) => (
+                        <span
+                          key={item}
+                          className="px-2.5 py-1 rounded-full border text-xs"
+                          style={{ borderColor: `${group.color}40`, color: "var(--text-muted)" }}
+                        >
+                          {item}
+                        </span>
+                      ))}
                     </div>
                   </div>
-                ))}
-              </div>
-            </motion.div>
-
-            {/* Interests */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="p-6 rounded-2xl border border-[var(--border-color)] bg-[var(--bg-card)]"
-            >
-              <p className="text-xs text-[var(--neon-orange)] tracking-widest mb-4">// INTERESTS</p>
-              <div className="flex flex-wrap gap-2">
-                {interests.map((interest) => (
-                  <span
-                    key={interest}
-                    className="px-3 py-1.5 rounded-full border border-[var(--border-color)] text-sm text-[var(--text-muted)] hover:border-[var(--neon-green)]/50 hover:text-[var(--neon-green)] transition-colors cursor-default"
-                  >
-                    {interest}
-                  </span>
                 ))}
               </div>
             </motion.div>

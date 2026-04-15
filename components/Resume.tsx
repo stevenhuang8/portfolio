@@ -18,7 +18,7 @@ const experience = [
   {
     role: "Full-Stack Developer",
     company: "Projects & Learning",
-    period: "2024 — 2025",
+    period: "Dec 2024 — Jan 2025",
     bullets: [
       "Built Flaskr CRUD blog app with Flask, SQLite, Jinja2 templating, and auth",
       "Developed stevebnb2 housing application with full CRUD and user flows",

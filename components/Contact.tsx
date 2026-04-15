@@ -107,10 +107,10 @@ export default function Contact() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        className="max-w-6xl mx-auto mt-20 pt-8 border-t border-[var(--border-color)] flex flex-wrap items-center justify-between gap-4 text-xs text-[var(--text-muted)]"
+        className="max-w-6xl mx-auto mt-20 pt-8 border-t border-[var(--border-color)] relative flex flex-wrap items-center justify-between gap-4 text-xs text-[var(--text-muted)]"
       >
         <span>Built with Next.js 16 + Framer Motion</span>
-        <span className="gradient-green-orange font-bold">Steven Huang © 2026</span>
+        <span className="gradient-green-orange font-bold absolute left-1/2 -translate-x-1/2">Steven Huang © 2026</span>
         <span>⚽ 🎮 🍜</span>
       </motion.div>
     </section>

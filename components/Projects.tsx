@@ -44,6 +44,19 @@ const projects = [
     github: "https://github.com/stevenhuang8/CRUD_Flask",
     live: "https://crud-flask-sljn.onrender.com/",
   },
+  {
+    title: "Grind",
+    emoji: "⚔️",
+    tagline: "Job Search RPG",
+    description:
+      "A gamified job search tracker that reframes the job hunt as an RPG campaign. Applications earn XP, rejections are 'bosses defeated,' and a Chrome extension captures job postings in one click. Features a drag-and-drop Kanban board and AI-generated status reactions.",
+    tags: ["Next.js", "TypeScript", "Supabase", "Claude API", "Chrome Extension", "LaunchDarkly"],
+    accentColor: "#dc2626",
+    glowClass: "glow-red",
+    gradientClass: "gradient-red-gold",
+    github: "https://github.com/stevenhuang8/the_grind",
+    live: "https://the-grinder.vercel.app/login?ref=recruiter",
+  },
 ];
 
 export default function Projects() {

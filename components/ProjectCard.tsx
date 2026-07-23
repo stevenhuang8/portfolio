@@ -67,7 +67,7 @@ export default function ProjectCard({ project, index }: { project: Project; inde
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: index * 0.15, duration: 0.5 }}
-        className="card-scene h-96"
+        className="card-scene h-[28rem]"
       >
         <div className="card-inner">
           {/* Front */}
@@ -110,7 +110,7 @@ export default function ProjectCard({ project, index }: { project: Project; inde
 
           {/* Back */}
           <div
-            className="card-back card-face rounded-2xl border bg-[var(--bg-secondary)] flex flex-col justify-between p-6 overflow-hidden relative"
+            className="card-back card-face rounded-2xl border bg-[var(--bg-secondary)] flex flex-col justify-between gap-4 p-6 overflow-hidden relative"
             style={{ borderColor: `${project.accentColor}40` }}
           >
             <div
@@ -123,7 +123,7 @@ export default function ProjectCard({ project, index }: { project: Project; inde
               <p className="text-[var(--text-muted)] text-sm leading-relaxed">{project.description}</p>
             </div>
 
-            <div className="flex flex-wrap gap-2 mb-3">
+            <div className="flex flex-wrap gap-2">
               {project.tags.map((tag) => (
                 <span
                   key={tag}

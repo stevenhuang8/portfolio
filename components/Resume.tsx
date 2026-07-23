@@ -44,6 +44,7 @@ const experience = [
     bullets: [
       "Built FF15: multi-agent AI food & fitness platform with 9 subagents and 27 tools",
       "Built DegenGPT: sports betting AI with RAG, web search, and MCP integrations",
+      "Built Grind: gamified job search tracker with a Kanban board, XP/leveling system, and a Chrome extension for one-click job capture",
       "Shipped production Next.js 15 apps with AI SDK 5, Supabase, and GPT-4o",
     ],
     color: "var(--neon-green)",

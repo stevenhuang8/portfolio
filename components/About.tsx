@@ -3,8 +3,8 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { label: "Projects Shipped", value: "3+", color: "var(--neon-green)" },
-  { label: "AI Agents Built", value: "12+", color: "var(--neon-orange)" },
+  { label: "Projects Shipped", value: "4+", color: "var(--neon-green)" },
+  { label: "AI Agents Built", value: "15+", color: "var(--neon-orange)" },
 { label: "Goals Scored", value: "999+", color: "var(--neon-blue)" },
   { label: "Knives Unboxed (CS)", value: "1", color: "var(--neon-pink)" },
 ];

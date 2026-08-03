@@ -17,6 +17,7 @@ Personal portfolio site showcasing my work as an AI engineer and builder. Featur
 | [FF15](https://github.com/stevenhuang8/FF15) | Food & Fitness AI Coach — multi-agent platform with 9 subagents, GPT-4 Vision meal analysis, RAG-powered recipes | Next.js 15, AI SDK 5, GPT-4o, Supabase, RAG |
 | [DegenGPT](https://github.com/stevenhuang8/DegenGPT) | AI Sports Betting Advisor — 3-agent platform with real-time odds analysis and reasoning tokens | Next.js 15, AI SDK 5, GPT-5, Vectorize, MCP, RAG |
 | [Flaskr](https://github.com/stevenhuang8/CRUD_Flask) | Full-stack CRUD blog app with authentication and SQLite | Python, Flask, SQLite, Jinja2 |
+| [The Grind](https://github.com/stevenhuang8/the_grind) | Gamified job-search tracker — Kanban board with XP/leveling, AI-generated status reactions, and a Chrome extension for one-click job capture | Next.js 16, TypeScript, Tailwind CSS v4, Supabase, Claude API, dnd-kit |
 
 ## Tech Stack
 

@@ -42,7 +42,7 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <p className="text-[var(--neon-pink)] text-xs tracking-widest mb-2">// MULTIPLAYER MODE</p>
+          <p className="text-[var(--neon-pink)] text-xs tracking-widest mb-2">{"// MULTIPLAYER MODE"}</p>
           <h2 className="text-4xl md:text-5xl font-black text-[var(--text-primary)] mb-4">
             Let&apos;s Connect<span className="text-[var(--neon-green)]">.</span>
           </h2>

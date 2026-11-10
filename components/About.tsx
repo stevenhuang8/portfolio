@@ -57,7 +57,7 @@ export default function About() {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <p className="text-[var(--neon-orange)] text-xs tracking-widest mb-2">// PLAYER INFO</p>
+          <p className="text-[var(--neon-orange)] text-xs tracking-widest mb-2">{"// PLAYER INFO"}</p>
           <h2 className="text-4xl md:text-5xl font-black text-[var(--text-primary)]">
             About<span className="text-[var(--neon-green)]">.</span>
           </h2>
@@ -99,7 +99,7 @@ export default function About() {
               viewport={{ once: true }}
               className="p-6 rounded-2xl border border-[var(--border-color)] bg-[var(--bg-card)] mb-6"
             >
-              <p className="text-xs text-[var(--neon-orange)] tracking-widest mb-4">// INTERESTS</p>
+              <p className="text-xs text-[var(--neon-orange)] tracking-widest mb-4">{"// INTERESTS"}</p>
               <div className="flex flex-wrap gap-2">
                 {interests.map((interest) => (
                   <span
@@ -140,7 +140,7 @@ export default function About() {
               viewport={{ once: true }}
               className="p-6 rounded-2xl border border-[var(--border-color)] bg-[var(--bg-card)] h-full"
             >
-              <p className="text-xs text-[var(--neon-green)] tracking-widest mb-6">// SKILL TREE</p>
+              <p className="text-xs text-[var(--neon-green)] tracking-widest mb-6">{"// SKILL TREE"}</p>
               <div className="space-y-5">
                 {skills.map((group) => (
                   <div key={group.category}>

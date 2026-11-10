@@ -72,7 +72,7 @@ export default function Projects() {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <p className="text-[var(--neon-green)] text-xs tracking-widest mb-2">// SELECTED WORK</p>
+          <p className="text-[var(--neon-green)] text-xs tracking-widest mb-2">{"// SELECTED WORK"}</p>
           <h2 className="text-4xl md:text-5xl font-black text-[var(--text-primary)]">
             Projects<span className="text-[var(--neon-orange)]">.</span>
           </h2>

@@ -21,8 +21,10 @@ export default function Hero() {
     } else if (deleting && displayed.length > 0) {
       timeout = setTimeout(() => setDisplayed(displayed.slice(0, -1)), 45);
     } else if (deleting && displayed.length === 0) {
-      setDeleting(false);
-      setTitleIdx((i) => (i + 1) % TITLES.length);
+      timeout = setTimeout(() => {
+        setDeleting(false);
+        setTitleIdx((i) => (i + 1) % TITLES.length);
+      }, 0);
     }
 
     return () => clearTimeout(timeout);

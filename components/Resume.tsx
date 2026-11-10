@@ -76,7 +76,7 @@ export default function Resume() {
           className="flex items-start justify-between mb-16 flex-wrap gap-4"
         >
           <div>
-            <p className="text-[var(--neon-blue)] text-xs tracking-widest mb-2">// CAREER LOG</p>
+            <p className="text-[var(--neon-blue)] text-xs tracking-widest mb-2">{"// CAREER LOG"}</p>
             <h2 className="text-4xl md:text-5xl font-black text-[var(--text-primary)]">
               Resume<span className="text-[var(--neon-pink)]">.</span>
             </h2>
